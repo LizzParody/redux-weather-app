@@ -5,7 +5,7 @@ const ROOT_URL = `http://samples.openweathermap.org/data/2.5/forecast?appid=${AP
 
 export const FETCH_WEATHER = 'FETCH_WEATHER' //we create a variable to keep our action types consistent btwn action creators and our reducers
 export function fetchWeather(city) {
-  const url = `${ROOT_URL}&q=${city},co`;
+  const url = `${ROOT_URL}&q=${city},us`;
   const request = axios.get(url)
 
   return {
